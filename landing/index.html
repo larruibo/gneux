@@ -7,7 +7,9 @@
     <link href="images/logos/logo.png" rel="image_src" />
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Prompt:300,500,600,700" rel="stylesheet">
-    <link rel="icon" type="image/jpg" href="images/logoG.jpg" />
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/png" href="images/logoG.png" />
   </head>
   <body>
     <section class="primera">
@@ -18,15 +20,20 @@
       </div>
       <div class="info-primera">
         <div class="imagen-info">
-          <img src="images/logo.png" alt="">
+          <img src="images/logoH.png" alt="">
         </div>
         <div class="contenido-info">
-          <h1>Seguimiento productivo y amigable</h1>
+          <!-- <h1>Seguimiento Productivo y Amigable</h1> -->
           <h3>Espéranos, ya estamos en camino</h3>
+        </div>
+        <div class="texto-info">
+          <p><span style="color:#800080;">Gneux</span> es un sistema que desarrollamos para ti, con fin de brindar un servicio de monitoreo y rastreo del medio de trasporte de pasajeros que usa tu compañia sea: rutas de colegio, personal corporativo, mascotas y más, en tiempo real.</p>
+        </div>
+
         </div>
       </div>
     </section>
-    <section class="segunda">
+    <!-- <section class="segunda">
       <div class="imagen-segunda">
         <img src="images/conductor1.jpg" alt="">
       </div>
@@ -41,8 +48,8 @@
 
         </div>
       </div>
-    </section>
-    <section class="tercera">
+    </section> -->
+    <!-- <section class="tercera">
       <div class="video">
 
       </div>
@@ -54,14 +61,17 @@
           <p>Enfocamos nuestro trabajo en ser una poderosa herramienta de valor para tu empresa.</p>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="cuarta">
       <div class="imagen-cuarta">
-        <img src="images/final.jpg" alt="">
+        <img class="mySlides w3-animate-left" src="images/final.jpg" alt="" >
+        <img class="mySlides w3-animate-left" src="images/conductor1.jpg" alt="">
       </div>
       <div class="info-cuarta">
-        <h3>Para más información</h3>
-        <h4>Pre-inscripción a nuestros servicios.</h4>
+        <h1>Seguimiento Productivo y Amigable</h1>
+        <p>En la plataforma pondrás supervisar todo el trayecto o servicio, obteniendo reportes del mismo, a su vez, tus usuarios o clientes podrán disfrutar de una aplicación móvil, la cual les dará la posibilidad de acceder a notificaciones e información sobre la ubicación de tus servicios, brindándoles constantes reportes sobre el estado de la ruta y más.</p>
+        <h3>¿Quieres conocer un poco más de nuestro servicio?</h3>
+        <h4>Obtén hasta 21 días gratis.</h4>
         <div class="form">
           <form class="" action="#" method="post">
             <input type="text" name="email" id="email" value="" placeholder="Email" required>
@@ -92,15 +102,31 @@
           </div>
           <div class="correo-footer">
             <span>Correo</span>
-            <span class="info-footer">mlega@neuxcode.com</span>
+            <span class="info-footer">info@neuxcode.com</span>
           </div>
           <div class="enlaces-footer">
-            <!-- <a href="#">Términos y condiciones</a>
+            <a href="#">Términos y condiciones</a>
             <a href="#">Política de Privacidad</a>
-            <a href="#">Política de Cookies</a> -->
+            <a href="#">Política de Cookies</a>
           </div>
         </div>
       </footer>
     </section>
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
+}
+</script>
   </body>
 </html>

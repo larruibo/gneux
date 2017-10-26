@@ -19,6 +19,7 @@ body{
   position: absolute;
   bottom: 0;
   left: 0;
+  background-color: #f1f1f1;
 }
 .imagen-primera img{
   width: 100%;
@@ -32,11 +33,10 @@ body{
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.2);
   z-index: 2;
 }
 .info-primera{
-  height: 35vh;
+  height: 25vh;
   width: 100%;
   background-color: white;
 }
@@ -44,20 +44,19 @@ body{
   position: absolute;
   top: 5vh;
   left: 5%;
-  /*width: 45%;*/
-  height: 8vh;
+  height: 4vh;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 3;
 }
 .imagen-info img{
-  height: 8vh;
+  height: 4vh;
   opacity: 0.9;
 }
 .contenido-info{
   position: absolute;
-  top: 14vh;
+  top: 10vh;
   left: 5%;
   width: 50%;
   height: auto;
@@ -93,6 +92,7 @@ body{
   color: #333;
   text-align: justify;
   font-weight: 300;
+  margin: 0;
 }
 
 .segunda{
@@ -200,6 +200,7 @@ body{
   width: 100%;
   height: 100vh;
   z-index: 1;
+  background-color: #f1f1f1;
 }
 .imagen-cuarta img{
   width: 100%;
@@ -222,6 +223,7 @@ body{
   margin-bottom: 2vh;
   padding-top: 5%;
   padding-left: 10%;
+  padding-right: 10%;
   font-family: 'Prompt';
 }
 .info-cuarta p{
@@ -230,7 +232,7 @@ body{
   color: #333;
   text-align: justify;
   font-weight: 300;
-  padding: 10% 10%;
+  padding: 6% 10%;
 }
 .info-cuarta h3{
   color: #800080;
@@ -265,6 +267,7 @@ body{
   font-size: 2vh;
   padding-left: 5%;
   box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+  color: #333;
 }
 .form button{
   border-radius: 32px;
@@ -273,30 +276,30 @@ body{
   color: #74086D;
   position: absolute;
   left: 74%;
+  top: 1vh;
   font-weight: 900;
-  top: -0.6vh;
   cursor: pointer;
 }
 .form img{
   transform: rotate(-90deg);
-  height: 5vh;
+  height: 1.7vh;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #4B374A;
+    color:    #333;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #4B374A;
+   color:    #333;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #4B374A;
+   color:    #333;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #4B374A;
+   color:    #333;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
-   color:    #4B374A;
+   color:    #333;
 }
 
 .footer{
@@ -330,7 +333,7 @@ body{
   height: 6vh;
 }
 .contacto-footer{
-  width: 75%;
+  width: 50%;
   height: 15vh;
   position: absolute;
   right: 0;
@@ -381,4 +384,153 @@ body{
 .info-footer{
   padding-left: 8%;
   font-weight: 500 !important;
+}
+
+@media screen and (max-width: 1050px)
+{
+  .info-primera{
+    height: 40vh;
+  }
+  .imagen-primera{
+    height: 60vh;
+  }
+  .imagen-primera img{
+    height: 60vh;
+    object-position: right;
+  }
+  .imagen-info{
+    position: relative;
+    width: 100%;
+    height: 8vh;
+    left: 0;
+    right: 0;
+    top: 3vh;
+
+  }
+  .imagen-info img{
+    height: 7vh;
+  }
+  .contenido-info{
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 3vh;
+  }
+  .contenido-info h3{
+    text-align: center;
+  }
+  .texto-info{
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 3vh;
+  }
+  .texto-info p{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .cuarta{
+    width: 100%;
+    height: 135vh;
+  }
+  .info-cuarta{
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+  .info-cuarta h1{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 3.5vh;
+    text-align: center;
+    margin: 0;
+  }
+  .info-cuarta h3{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+    text-align: center;
+  }
+  .info-cuarta h4{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+    text-align: center;
+  }
+  .form{
+    margin-top: 2vh;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    height: 6vh;
+  }
+  .form input{
+    position: relative;
+  }
+  .form button{
+    right: 8%;
+    left: auto;
+  }
+  .info-cuarta p{
+    padding: 5%;
+    margin: 0;
+  }
+  .imagen-cuarta{
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 70vh;
+    left: 0;
+  }
+  .imagen-cuarta img{
+    height: 30vh;
+  }
+  .footer{
+    width: 100%;
+    bottom: 0;
+    height: 35vh;
+  }
+  .redes-footer{
+    width: 100%;
+    position: relative;
+    height: 13vh;
+    padding-left: 0;
+    text-align: center;
+  }
+  .contacto-footer{
+    width: 100%;
+    position: relative;
+    height: 22vh;
+    text-align: center;
+  }
+  .telefono-footer{
+    width: 100%;
+    position: relative;
+    height: 10vh;
+    top: 2vh;
+    left: 0;
+  }
+  .info-footer{
+    padding-left: 0;
+  }
+  .correo-footer{
+    width: 100%;
+    position: relative;
+    height: 10vh;
+    top: 2vh;
+    left: 0;
+  }
+  .enlaces-footer{
+    width: 100%;
+    position: relative;
+    height: 10vh;
+  }
+  .enlaces-footer a{
+    padding: 1% 0;
+  }
 }

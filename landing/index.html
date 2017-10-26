@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108536142-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108536142-1');
+    </script>
     <meta charset="utf-8">
     <title>Gneux</title>
     <meta name="description" content="Gneux - Seguimiento Productivo y Amigable">
@@ -8,22 +17,24 @@
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Prompt:300,500,600,700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="js/index.js"></script>
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" type="image/png" href="images/logoG.png" />
   </head>
   <body>
     <section class="primera">
       <div class="imagen-primera">
-        <img src="images/inicio.jpg" alt="">
-      </div>
-      <div class="cover-primera">
+        <img src="images/inicio.jpg" class="mySlidesHome w3-animate-bottom" alt="">
+        <img src="images/prueba1.jpg" class="mySlidesHome w3-animate-left" alt="">
+        <img src="images/prueba2.jpg" class="mySlidesHome w3-animate-bottom" alt="">
+        <img src="images/prueba3.jpg" class="mySlidesHome w3-animate-left" alt="">
       </div>
       <div class="info-primera">
         <div class="imagen-info">
           <img src="images/logoH.png" alt="">
         </div>
         <div class="contenido-info">
-          <!-- <h1>Seguimiento Productivo y Amigable</h1> -->
           <h3>Espéranos, ya estamos en camino</h3>
         </div>
         <div class="texto-info">
@@ -33,35 +44,7 @@
         </div>
       </div>
     </section>
-    <!-- <section class="segunda">
-      <div class="imagen-segunda">
-        <img src="images/conductor1.jpg" alt="">
-      </div>
-      <div class="contenido-segunda">
-        <div class="info-segunda">
-          <h1>Control y Seguridad</h1>
-          <p>Con nuestra plataforma podrás tener control de los servicios que ofrece tu compañía en tiempo real.</p>
-        </div>
-      </div>
-      <div class="contenido-triangulo">
-        <div class="triangulo">
 
-        </div>
-      </div>
-    </section> -->
-    <!-- <section class="tercera">
-      <div class="video">
-
-      </div>
-      <div class="info-tercera">
-        <div class="flotante">
-
-        </div>
-        <div class="texto">
-          <p>Enfocamos nuestro trabajo en ser una poderosa herramienta de valor para tu empresa.</p>
-        </div>
-      </div>
-    </section> -->
     <section class="cuarta">
       <div class="imagen-cuarta">
         <img class="mySlides w3-animate-left" src="images/final.jpg" alt="" >
@@ -83,16 +66,16 @@
         <div class="redes-footer">
           <h3>Síguenos</h3>
           <div class="logo-footer">
-            <a href="#"><img src="images/facebook.png" alt=""></a>
+            <a href="https://www.facebook.com/GneuxApp/" target="_blank"><img src="images/facebook.png" alt=""></a>
           </div>
           <div class="logo-footer">
-            <a href="#"><img src="images/linkedin.png" alt=""></a>
+            <a href="https://www.linkedin.com/company/24983354/" target="_blank"><img src="images/linkedin.png" alt=""></a>
           </div>
           <div class="logo-footer">
-            <a href="#"><img src="images/instagram.png" alt=""></a>
+            <a href="https://www.instagram.com/gneux_app/" target="_blank"><img src="images/instagram.png" alt=""></a>
           </div>
           <div class="logo-footer">
-            <a href="#"><img src="images/twitter.png" alt=""></a>
+            <a href="https://twitter.com/Gneux_app" target="_blank"><img src="images/twitter.png" alt=""></a>
           </div>
         </div>
         <div class="contacto-footer">
@@ -104,29 +87,13 @@
             <span>Correo</span>
             <span class="info-footer">info@neuxcode.com</span>
           </div>
-          <div class="enlaces-footer">
+          <!-- <div class="enlaces-footer">
             <a href="#">Términos y condiciones</a>
             <a href="#">Política de Privacidad</a>
             <a href="#">Política de Cookies</a>
-          </div>
+          </div> -->
         </div>
       </footer>
     </section>
-    <script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 5000);
-}
-</script>
   </body>
 </html>

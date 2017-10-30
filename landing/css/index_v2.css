@@ -297,14 +297,18 @@ body{
   color: #333;
 }
 .form button{
+  font-size: 'Prompt';
   border-radius: 32px;
-  background: transparent;
   border: none;
-  color: #74086D;
+  color: white;
   position: absolute;
-  left: 76%;
-  top: 10.7vh;
-  font-weight: 900;
+  right: 17%;
+  height: 3.1vh;
+  width: 18%;
+  font-size: 2vh;
+  background-color: #800080;
+  top: 10.5vh;
+  font-weight: 500;
   cursor: pointer;
 }
 .form img{
@@ -525,7 +529,7 @@ body{
     width: 80%;
   }
   .form button{
-    right: 10%;
+    right: 11%;
     left: auto;
     top: 10.5vh;
   }
